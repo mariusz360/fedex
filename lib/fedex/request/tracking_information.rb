@@ -19,9 +19,9 @@ module Fedex
         @uuid                   = options[:uuid]
         @paging_token           = options[:paging_token]
 
-        unless package_type_valid?
-          raise "Unknown package type '#{package_type}'"
-        end
+        # unless package_type_valid?
+        #   raise "Unknown package type '#{package_type}'"
+        # end
       end
 
       def process_request
