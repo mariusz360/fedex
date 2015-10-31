@@ -8,10 +8,10 @@ module Fedex
       attr_reader :package_type, :package_id
 
       def initialize(credentials, options={})
-        requires!(options, :package_type, :package_id) unless options.has_key?(:tracking_number)
+        # requires!(options, :package_type, :package_id) unless options.has_key?(:tracking_number)
 
-        @package_id   = options[:package_id]   || options.delete(:tracking_number)
-        @package_type = options[:package_type] || "TRACKING_NUMBER_OR_DOORTAG"
+        # @package_id   = options[:package_id]   || options.delete(:tracking_number)
+        # @package_type = options[:package_type] || "TRACKING_NUMBER_OR_DOORTAG"
         @credentials  = credentials
 
         # Optional
